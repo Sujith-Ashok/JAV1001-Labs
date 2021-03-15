@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_image"
+
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textViewTeamB"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="208dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="614dp"
+        android:layout_weight="1"
+        android:text="Team B"
+        android:textAlignment="center"
+        android:textColor="#E85A4F"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewTeamA"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="204dp"
+        android:layout_marginBottom="614dp"
+        android:layout_weight="1"
+        android:text="Team A"
+        android:textAlignment="center"
+        android:textColor="#E85A4F"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextNameA"
+        android:layout_width="196dp"
+        android:layout_height="55dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginEnd="203dp"
+        android:layout_marginBottom="549dp"
+        android:ems="10"
+        android:hint="Enter Team A Name"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#FFEE58"
+        android:textColorHint="#FFEE58" />
+
+    <EditText
+        android:id="@+id/editTextNameB"
+        android:layout_width="196dp"
+        android:layout_height="56dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="208dp"
+        android:layout_marginBottom="548dp"
+        android:ems="10"
+        android:hint="Enter Team B Name"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#FFEE58"
+        android:textColorHint="#FFEE58" />
+
+    <TextView
+        android:id="@+id/textViewScoreA"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="277dp"
+        android:layout_marginBottom="440dp"
+        android:text="0"
+        android:textAlignment="viewEnd"
+        android:textColor="#FFEE58"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewScoreB"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="440dp"
+        android:text="0"
+        android:textAlignment="viewStart"
+        android:textColor="#FFEE58"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        android:layout_width="108dp"
+        android:layout_height="61dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="137dp"
+        android:layout_marginBottom="371dp"
+        android:backgroundTint="#E44444"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#FFFFFF"
+        android:textOff="Team B"
+        android:textOn="Team A"
+        android:textSize="21sp" />
+
+    <RadioGroup
+        android:id="@+id/radioScore"
+        android:layout_width="397dp"
+        android:layout_height="63dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="306dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButtonOne"
+            android:layout_width="123dp"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="1 Point"
+            android:textColor="#FFEE58"
+            android:textSize="25sp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonTwo"
+            android:layout_width="136dp"
+            android:layout_height="wrap_content"
+            android:text="2 Points"
+            android:textColor="#FFEE58"
+            android:textSize="25sp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonThree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3 Points"
+            android:textColor="#FFEE58"
+            android:textSize="25sp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonPlus"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="289dp"
+        android:layout_marginBottom="371dp"
+        android:background="@drawable/circle"
+        android:text="+"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/buttonMinus"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="371dp"
+        android:background="@drawable/circle"
+        android:text="-"
+        android:textSize="30sp" />
+
+</RelativeLayout>
