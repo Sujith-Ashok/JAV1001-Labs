@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="144dp"
+        android:layout_height="391dp"
+        android:layout_marginStart="36dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.961">
+
+        <RadioButton
+            android:id="@+id/RB4"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="4"
+            android:textSize="25sp" />
+
+        <RadioButton
+            android:id="@+id/RB6"
+            android:layout_width="79dp"
+            android:layout_height="wrap_content"
+            android:text="6"
+            android:textSize="25sp" />
+
+        <RadioButton
+            android:id="@+id/RB8"
+            android:layout_width="79dp"
+            android:layout_height="wrap_content"
+            android:text="8"
+            android:textSize="25sp" />
+
+        <RadioButton
+            android:id="@+id/RB10"
+            android:layout_width="79dp"
+            android:layout_height="wrap_content"
+            android:text="10"
+            android:textSize="25sp" />
+
+        <RadioButton
+            android:id="@+id/RB12"
+            android:layout_width="79dp"
+            android:layout_height="wrap_content"
+            android:text="12"
+            android:textSize="25sp" />
+
+        <RadioButton
+            android:id="@+id/RB20"
+            android:layout_width="79dp"
+            android:layout_height="wrap_content"
+            android:text="20"
+            android:textSize="25sp" />
+
+        <RadioButton
+            android:id="@+id/RB10M"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="10 (10s)"
+            android:textSize="25sp" />
+
+        <RadioButton
+            android:id="@+id/RB10S"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="10 (0-9)"
+            android:textSize="25sp" />
+
+    </RadioGroup>
+
+    <ToggleButton
+        android:id="@+id/TBCustom"
+        android:layout_width="119dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="216dp"
+        android:text="ToggleButton"
+        android:textOff="Custom OFF"
+        android:textOn="Custom ON"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnRoll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="228dp"
+        android:layout_marginBottom="348dp"
+        android:text="ROLL"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnRollTwice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="284dp"
+        android:text="ROLL TWICE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/textCustom"
+        android:layout_width="274dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="416dp"
+        android:ems="10"
+        android:hint="Enter custom dice side"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textResult"
+        android:layout_width="172dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="92dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.809"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textLast"
+        android:layout_width="239dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="156dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.967"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="128dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="96dp"
+        android:text="Roll Result:"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="134dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="156dp"
+        android:text="Previous rolls:"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="141dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="12dp"
+        android:text="Clear rolls"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.305"
+        app:layout_constraintStart_toEndOf="@+id/radioGroup"
+        app:layout_constraintTop_toBottomOf="@+id/btnRollTwice" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="220dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="28dp"
+        android:text="LETS ROLL!!!"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
