@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Custom_Pizza">
+
+    <TextView
+        android:id="@+id/textView18"
+        style="@style/TextHeader.Names"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="364dp"
+        android:text="Add-Ons"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.279"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textcustHeader"
+        android:layout_width="312dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:text="Your Order"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.382"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonAMHome"
+        android:layout_width="390dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="#4FC3F7"
+        android:text="Home page"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#212121"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewSelected"
+        style="@style/TextHeader.Names"
+        android:layout_width="181dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="72dp"
+        android:text=" "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.924"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView16"
+        style="@style/TextHeader.Names"
+        android:layout_width="179dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="72dp"
+        android:text="Selected Pizza: "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.074"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/RGSize"
+        android:layout_width="163dp"
+        android:layout_height="161dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.298">
+
+        <RadioButton
+            android:id="@+id/RBsmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Small - $14" />
+
+        <RadioButton
+            android:id="@+id/RBMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Medium - $17" />
+
+        <RadioButton
+            android:id="@+id/RBLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Large - $21" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/RGBase"
+        android:layout_width="152dp"
+        android:layout_height="161dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.297">
+
+        <RadioButton
+            android:id="@+id/radioButton7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Regular" />
+
+        <RadioButton
+            android:id="@+id/radioButton8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thick" />
+
+        <RadioButton
+            android:id="@+id/radioButton9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thin" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView8"
+        style="@style/TextHeader.Names"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="132dp"
+        android:text="Size"
+        app:layout_constraintEnd_toStartOf="@+id/textView17"
+        app:layout_constraintHorizontal_bias="0.089"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView17"
+        style="@style/TextHeader.Names"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="132dp"
+        android:layout_marginEnd="108dp"
+        android:text="Crust"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBoxEC"
+        android:layout_width="287dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="240dp"
+        android:text="Extra Cheese - $1"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonAMHome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBoxPC"
+        android:layout_width="292dp"
+        android:layout_height="30dp"
+        android:text="Parmesan Cheese -$1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxEC" />
+
+    <CheckBox
+        android:id="@+id/checkBoxGH"
+        android:layout_width="297dp"
+        android:layout_height="31dp"
+        android:text="Garlic + Herb Seasoning - $0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxPC" />
+
+    <CheckBox
+        android:id="@+id/checkBoxBS"
+        android:layout_width="295dp"
+        android:layout_height="34dp"
+        android:text="BBQ Sauce - $2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxGH" />
+
+    <CheckBox
+        android:id="@+id/checkBoxCC"
+        android:layout_width="294dp"
+        android:layout_height="37dp"
+        android:text="Cheddar Chipotle - $2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxBS" />
+
+    <Button
+        android:id="@+id/btnCustNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="56dp"
+        android:text="Next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

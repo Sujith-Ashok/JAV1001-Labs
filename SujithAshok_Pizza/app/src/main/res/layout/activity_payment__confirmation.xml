@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Payment_Confirmation">
+
+    <TextView
+        android:id="@+id/textViewPC"
+        android:layout_width="312dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="144dp"
+        android:text="Order Confirmed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/imageViewPCPizza1"
+        android:layout_width="188dp"
+        android:layout_height="122dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPC"
+        app:srcCompat="@drawable/preview_image" />
+
+    <TextView
+        android:id="@+id/textViewPCConfirm"
+        android:layout_width="353dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="164dp"
+        android:text="Order placed successfully"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPC" />
+
+    <Button
+        android:id="@+id/buttonPCPast"
+        android:layout_width="211dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#4FC3F7"
+        android:text="View Past orders"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPCConfirm" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

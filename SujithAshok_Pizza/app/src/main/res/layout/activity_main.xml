@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/buttonPrevious"
+        android:layout_width="395dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="4dp"
+        android:text="Previous orders"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="117dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="4dp"
+        android:text="Menu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewPizza3"
+        style="@style/TextHeader.Names"
+        android:layout_width="171dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="96dp"
+        android:text="Canadiana"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        style="@style/TextHeader.Descriptions"
+        android:layout_width="359dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="152dp"
+        android:text="Be creative and challenge us to recreate the pizza your made."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.764"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonPizza3"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="96dp"
+        android:text="Select"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewPizza1"
+        style="@style/TextHeader.Names"
+        android:layout_width="178dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="288dp"
+        android:layout_marginEnd="104dp"
+        android:text="Deluxe Pizza"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonOne"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="288dp"
+        android:text="Select"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonTwo"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="152dp"
+        android:text="Select"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewASPizza1"
+        android:layout_width="92dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="260dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/preview_image" />
+
+    <TextView
+        android:id="@+id/textViewPizza2"
+        style="@style/TextHeader.Names"
+        android:layout_width="184dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="32dp"
+        android:text="Veggie Pizza"
+        app:layout_constraintBottom_toTopOf="@+id/textView7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        style="@style/TextHeader.Descriptions"
+        android:layout_width="365dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="344dp"
+        android:text="Mozzarella cheese, pepperoni, green peppers, onions and bacon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView7"
+        style="@style/TextHeader.Descriptions"
+        android:layout_width="349dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="68dp"
+        android:text="Mozzarella cheese, mushrooms, green pepper, tomatoes, onions and green olives."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.681"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="87dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.039"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/preview_image" />
+
+    <ImageView
+        android:id="@+id/imageViewASPizza5"
+        android:layout_width="92dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="464dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.039"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/preview_image" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
